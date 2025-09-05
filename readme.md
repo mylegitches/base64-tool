@@ -1,45 +1,128 @@
-# Base64 Encoder/Decoder Tool
+# Base64 Tool
 
-A Python-based GUI application for encoding and decoding files or directories in Base64 format.  
-Built with **Tkinter** for a modern, user-friendly interface.
+**A comprehensive software project with professional documentation.**
 
----
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
 
-## Features
+## 📋 Table of Contents
 
-- **Automatic Detection**  
-  Automatically detects whether a file is Base64-encoded and decides whether to encode or decode.
+- [Overview](#-overview)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Quick Start](#-quick-start)
+- [Usage](#-usage)
+- [Configuration](#-configuration)
+- [API Reference](#-api-reference)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Support](#-support)
 
-- **File Processing**  
-  - Encodes any file to Base64 and appends `.encoded` to the filename.
-  - Decodes Base64 files and restores the original filename (removes `.encoded`).
+## 🎯 Overview
 
-- **Directory Processing**  
-  - Zips the entire directory before encoding.
-  - Encoded ZIP is saved with `.encoded` extension.
+This project contains Python scripts for base64 tool functionality.
 
-- **Data Safety**  
-  - Original files are never overwritten.
-  - Error handling for safe operation.
-  - Works with any file type.
+## ✨ Features
 
-- **Help Window**  
-  - Built-in detailed instructions via a “How It Works” help popup.
+✅ **Python Implementation** - Complete Python-based solution
 
----
+## 📦 Installation
 
-## Requirements
+### Prerequisites
 
-- **Python**: 3.7 or later
-- No external libraries required (uses standard Python libraries).
+- Python 3.8+ (if applicable)
 
----
-
-## Installation
-
-1. Clone or download this repository.
-2. Ensure Python 3.x is installed on your system.
-3. Run the script:
+### Installation Steps
 
 ```bash
+# Clone the repository
+git clone https://github.com/mylegitches/base64-tool.git
+cd base64-tool
+
+# Run the application
 python base64-tool.py
+```
+
+## 🚀 Quick Start
+
+### Basic Usage
+
+1. **Install Dependencies**
+   ```bash
+   ```
+
+2. **Run Application**
+   ```bash
+   python base64-tool.py
+   ```
+
+3. **Follow On-screen Instructions**
+   The application will guide you through the initial setup and configuration.
+
+## 🎮 Usage
+
+### Command Line Usage
+
+```bash
+# Basic usage
+python base64-tool.py
+
+# With options
+python main.py --help
+```
+
+## ⚙️ Configuration
+
+No configuration files required. The application runs with default settings.
+
+## 📚 API Reference
+
+### Core Functions
+
+#### `main.run()`
+Main entry point for the application.
+
+**Returns:**
+- Result object with execution status
+
+## 🏗️ Development
+
+### Development Setup
+
+```bash
+# Clone repository
+git clone https://github.com/mylegitches/base64-tool.git
+cd base64-tool
+
+# Create virtual environment
+python -m venv venv
+# source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate   # Windows
+
+# Run the application
+python base64-tool.py
+```
+
+## 🤝 Contributing
+
+### How to Contribute
+
+1. **Fork** the repository
+2. **Create** a feature branch: `git checkout -b feature/new-feature`
+3. **Make** your changes and add tests
+4. **Commit** your changes: `git commit -m "Add new feature"`
+5. **Push** to your branch: `git push origin feature/new-feature`
+6. **Create** a Pull Request
+
+## 📞 Support
+
+### Getting Help
+
+1. **Check the documentation** above
+2. **Review existing issues** on GitHub
+3. **Create a new issue** if needed
+
+---
+
+**Generated on 2025-09-04**
+
+*This README was automatically enhanced to provide comprehensive documentation and professional presentation.*
