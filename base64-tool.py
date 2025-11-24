@@ -94,6 +94,7 @@ def process_directory(directory_path):
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
 
+
 def run_full_service_decoder():
     """Launch the full_service_decoder.py script in a separate process."""
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -113,7 +114,6 @@ def run_full_service_decoder():
             "Leave this window open until it finishes.")
     except Exception as e:
         messagebox.showerror("Error", f"Failed to launch decoder:\n{e}")
-
 def select_file():
     """Handle file selection"""
     file_path = filedialog.askopenfilename(
