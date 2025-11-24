@@ -34,7 +34,7 @@ The GUI launches immediately; use the buttons to process files or directories.
 
 - **Select File to Process** – chooses a single file; the app either encodes it to `<file>.encoded` or decodes it back to the original name.
 - **Select Directory to Process** – zips the directory, encodes the ZIP, and saves `<directory>.encoded`.
-- **Run Full-Service Decoder** – opens a new console that executes `full_service_decoder.py`. By default that script scans `C:\Users\AXR629\Downloads` (update `INPUT_DIRECTORY` if needed) and writes decoded content to `C:\Users\AXR629\Downloads\decoded`. It detects whether decoded bytes are ZIPs and extracts them automatically.
+- **Run Full-Service Decoder** – opens a new console that executes `full_service_decoder.py`. It automatically scans your current user's `Downloads` folder (override with `B64_INPUT_DIR`) and writes results to a `decoded` subfolder (override with `B64_OUTPUT_DIR`). Detected ZIP payloads are extracted automatically.
 - **How It Works** – opens reference instructions inside the app.
 
 ## Command-Line Utilities
@@ -48,6 +48,8 @@ These scripts remain for specialized deployments; they are not required for the 
 | `prod.py` | Reverses the `dev.py` workflow: decodes `asap.encoded` from Downloads, extracts it, and copies the project into `C:\Users\axr629\OneDrive - Aramco Trading Americas\asap\Dev`. |
 
 If you do not use these automation scripts, you can safely ignore or delete them.
+
+> **Tip:** `full_service_decoder.py` automatically targets your current user's `Downloads` folder using `Path.home() / "Downloads"`. Set `B64_INPUT_DIR` and/or `B64_OUTPUT_DIR` environment variables if you want it to scan or write somewhere else.
 
 ## Project Status
 

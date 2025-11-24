@@ -1,12 +1,15 @@
 import os
 import base64
 import zipfile
+from pathlib import Path
 
 # ==============================
 # Configuration (edit as needed)
 # ==============================
-INPUT_DIRECTORY = r"C:\Users\user\Downloads"
-OUTPUT_DIRECTORY = r"C:\Users\user\Downloads\decoded"
+DEFAULT_DOWNLOADS = Path.home() / "Downloads"
+INPUT_DIRECTORY = os.environ.get("B64_INPUT_DIR", str(DEFAULT_DOWNLOADS))
+OUTPUT_DIRECTORY = os.environ.get(
+    "B64_OUTPUT_DIR", str((DEFAULT_DOWNLOADS / "decoded")))
 
 # ==============================
 # Helper Functions
